@@ -325,7 +325,7 @@ section img{
   margin-top: 4.2rem;
 }
 .project-row img{
-  /* margin: 0 0 0 4.9rem; */
+  margin: 0 0 0 4.9rem;
   width: 100%;
   height: auto  ;
   border-radius: 28px;

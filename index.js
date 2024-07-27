@@ -1,11 +1,4 @@
-//menu show hidden
-const navMenu =document.getElementById('nav-menu');
-const navToggle=document.getElementById('nav-toggle');
- const navClose=document.getElementById('nav-close');
-
-
-if(navToggle){
-        navToggle.addEventListener('click',()=>{
-            navMenu.classList.add('show_menu')
-        })
-}
+const header=document.querySelector("header");
+window.addEventListener("scroll",function(){
+    header.classList.toggle("sticky",window.scrollY>120);
+});

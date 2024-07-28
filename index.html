@@ -200,9 +200,12 @@
       <h2>Contact <span>Me</span></h2>
     </div>
     <div class="contact-form">
-      <form action="">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email Address..." required>
+      <form name="contact" method="POST" data-netlify="true" onSubmit="submit" netlify-honeypot="bot-field">
+        <input name="bot-field" class="visually-hidden" >
+        <label for="full-name" class="visually-hidden">Full Name</label>
+        <input type="text" placeholder="Your Name" required  id="full-name">
+        <label for="email" class="visually-hidden">Email</label>
+        <input type="email" placeholder="Email Address..." required id="email">
         <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
         <input type="submit" name="" value="Send Message" class="send-btn">
       </form>

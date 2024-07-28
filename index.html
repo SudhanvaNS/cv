@@ -3,8 +3,15 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="./images/favicon.png" type="image/x-icon">
       <link rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+      <meta name="description" content="Sudhanva NS's personal portfolio showcasing skills, education, projects, and contact information.">
+      <meta name="keywords" content="Sudhanva NS, portfolio, developer, projects, skills, education, contact">
+      <meta name="author" content="Sudhanva NS">
+      <meta name="robots" content="index, follow">
+      <meta property="og:title" content="Sudhanva NS - Portfolio">
+      <meta property="og:description" content="Sudhanva NS's personal portfolio showcasing skills, education, projects, and contact information.">
       <link
         href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
         rel="stylesheet"
@@ -13,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-    <title>Portfolio</title>
+    <title>Sudhanva NS - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,14 +28,16 @@
     
       <a href="#" class="logo">Developer <span>X.</span></a>
      
-      <div class="bx bx-menu" id="menu-icon"></div>
-     
+      <div class="bx bx-menu" id="menu-icon">
+        
+      </div>
+
       <ul class="navlist">
             <li><a href="#home" class="nav_link"> Home </a></li>
             <li> <a href="#about" class="nav_link">  About  </a>   </li>
             <li><a href="#skills" class="nav_link"> Skills </a> </li>
+            <li><a href="#education" class="nav_link"> Education</a></li>
             <li><a href="#project" class="nav_link"> Projects</a></li>
-            <li><a href="#" class="nav_link"> Portfolio</a></li>
             <li><a href="#contact" class="nav_link">  Contact Me</a></li>
         </ul>
 
@@ -76,9 +85,43 @@
         </div>
     </section>
   
+    <!-- Skills -->
+
+    <section class="skills" id="skills">
+      <div class="center-text"> 
+         <h2><span>Skills</span></h2>
+       </div>
+       <div class="skills-content">
+           <div class="box">
+             <h3>Technical Skills</h3>
+             <div class="skills-row">
+               <div class="skill-block">C</div>
+               <div class="skill-block">C++</div>
+               <div class="skill-block">Python</div>
+               <div class="skill-block">Java</div>
+               <div class="skill-block">HTML</div>
+               <div class="skill-block">CSS</div>
+               <div class="skill-block">JavaScript</div>
+               <div class="skill-block">React</div>
+               <div class="skill-block">MySQL</div>
+               <div class="skill-block">MongoDB</div>
+             </div>
+           </div>
+           
+           <div class="box">
+             <h3>Non-Technical Skills</h3>
+             <div class="skills-row">
+               <div class="skill-block">Communication</div>
+               <div class="skill-block">Teamwork</div>
+               <div class="skill-block">Problem Solving</div>
+             </div>
+           </div>
+       </div>
+   </section>
+   
   <!-- education -->
 
-  <section class="education" id="education1">
+  <section class="education" id="education">
    <div class="center-text"> 
       <h2><span>Education</span></h2>
     </div>
@@ -113,36 +156,68 @@
 
       <div class="project-content">
         
-        <div class="project-row">
-          <img src="./images/pav.png" alt="hello">
-          <div class="main-row"></div>
-          <p>Bachelors of Engineering(2021-Present)</p>
-          <p>Information Science and Engineering</p>
-          <p>CGPA : 8.4</p>
+        <div class="project-box">
+          <img src="./images/travel.jpg" alt="hello">
+          <div class="main-row">
+            <div class="row-text">
+              <h5>Travel Advisory</h5>
+            </div>
+            <div class="row-icon"><i class="ri-github-fill"></i></div>
+          </div>
+          <h4>Provides travel advisories and safety information for various destinations worldwide
+            </h4>
         </div>
         
-        <div class="project-row">
-          <img src="./images/pav.png" alt="hello">
-          <div class="main-row"> hi</div>
-          <h3>BIT</h3>
-          <p>Bachelors of Engineering(2021-Present)</p>
-          <p>Information Science and Engineering</p>
-          <p>CGPA : 8.4</p>
+        <div class="project-box">
+          <img src="./images/travel.jpg" alt="hello">
+          <div class="main-row">
+            <div class="row-text">
+              <h5>Travel Advisory</h5>
+            </div>
+            <div class="row-icon"><i class="ri-github-fill"></i></div>
+          </div>
+          <h4>Provides travel advisories and safety information for various destinations worldwide
+            </h4>
         </div>
 
-        <div class="project-row">
-          <img src="./images/pav.png" alt="hello">
-          <div class="main-row"></div>
-          <h3>BIT</h3>
-          <p>Bachelors of Engineering(2021-Present)</p>
-          <p>Information Science and Engineering</p>
-          <p>CGPA : 8.4</p>
+        <div class="project-box">
+          <img src="./images/travel.jpg" alt="hello">
+          <div class="main-row">
+            <div class="row-text">
+              <h5>Travel Advisory</h5>
+            </div>
+            <div class="row-icon"><i class="ri-github-fill"></i></div>
+          </div>
+          <h4>lore Provides travel advisories and safety information for various destinations worldwide
+            </h4>
         </div>
        
     
     </div>
   </section>
+  <section class="contact" id="contact">
+    <div class="center-text">
+      <h2>Contact <span>Me</span></h2>
+    </div>
+    <div class="contact-form">
+      <form action="">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address..." required>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+        <input type="submit" name="" value="Send Message" class="send-btn">
+      </form>
+    </div>
+  </section>
 
+  <div class="footer">
+    <div class="copyright">
+      <p>2024 Sudhanva N S,All Rights Reserved. </p>
+    </div>
+
+    <a href="#home" class="scroll-top">
+      <i class="ri-arrow-up-double-line"></i>
+    </a>
+  </div>
     <script src="index.js"></script>
 </body>
 </html>
